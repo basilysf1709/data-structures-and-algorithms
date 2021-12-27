@@ -1,2 +1,3 @@
-# leetcode-blind-25
-Leetcode Blind 25
+# leetcode-blind-75
+Leetcode Blind 75
+
