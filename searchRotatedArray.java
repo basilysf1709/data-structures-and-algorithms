@@ -1,4 +1,3 @@
-import java.util.Arrays;
 
 class Solution {
     public int search(int[] nums, int target) {
