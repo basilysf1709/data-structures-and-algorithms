@@ -38,4 +38,6 @@ Sol) Algorithm:
      => Convert both to character arrays
      => Check if length is equal first, then
      => Sort them, and then check if each character is equal => arr[i] = arr1[i]
+Q. `LeetCode 153: Find Minimum in Rotated Sorted Array`
+Sol) Use Arrays.sort(nums) => return nums[0], [Note: Check how sort works]
 
