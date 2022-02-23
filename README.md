@@ -42,3 +42,5 @@ Q. `LeetCode 153: Find Minimum in Rotated Sorted Array`
 Sol) Use Arrays.sort(nums) => return nums[0], [Note: Check how sort works]
 Q. `LeetCode 39: Search in Rotated Sorted Array`
 Sol) Do it normally, [Note: Check Merge Sort]
+Q. `LeetCode 11: Container With Most Water`
+Sol_
