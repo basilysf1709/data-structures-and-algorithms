@@ -43,4 +43,13 @@ Sol) Use Arrays.sort(nums) => return nums[0], [Note: Check how sort works]
 Q. `LeetCode 39: Search in Rotated Sorted Array`
 Sol) Do it normally, [Note: Check Merge Sort]
 Q. `LeetCode 11: Container With Most Water`
-Sol_
+Sol) Algorithm: Two Pointer Technique [Note: if equal, discard either height but be consistent]
+     => [1,8,6,2,5,4,8,3,7] => Area = 1 * (pointer2 - pointer1) = 1 * 8 = 8
+     => discard smaller height => Area = 7 * (pointer2 - pointer1) = 7 * 7 = **49**
+     => discard smaller height => Area = 3 * (pointer2 - pointer1) = 3 * 6 = 18
+     => discard smaller height => Area = 8 * (pointer2 - pointer1) = 8 * 5 = 40
+     => discard smaller height => Area = 4 * (pointer2 - pointer1) = 4 * 4 = 16
+     => discard smaller height => Area = 5 * (pointer2 - pointer1) = 5 * 3 = 15
+     => discard smaller height => Area = 2 * (pointer2 - pointer1) = 2 * 2 = 4
+     => discard smaller height => Area = 6 * (pointer2 - pointer1) = 6 * 1 = 6
+     => 49 is the largest area
