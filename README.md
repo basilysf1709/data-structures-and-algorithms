@@ -56,4 +56,14 @@ Sol) Algorithm: Two Pointer Technique [Note: if equal, discard either height but
 Q. `LeetCode 15: 3sum`
 Sol) Algorithm: Brute Force => Make three loops and check the sum for each elements 3 times. Continue the loop when indices are equal to one another.
 Algorithm: Pointer technique
-=>
+=> Go through every element by making a loop
+=> Make a second loop and then select a left pointer
+and a right pointer
+=> Example: [-1,0,1,3,-1,-4]
+=> Sort: [-4,-1,-1,-,1,3]
+=> Select -1 first, then loop from index[1] to index[length]
+=> if sum < 0 increase lp by 1
+=> if sum > 0 decrease rp by 1
+=> else append to list if already not in the list
+=> return list
+Q. `LeetCode 15: 3sum`:
