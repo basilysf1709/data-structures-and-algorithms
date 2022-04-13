@@ -71,3 +71,4 @@ Q. `LeetCode 268. Missing Number`:
 => if i does not equal to num[i], return i
 => else just return len(nums) => example [0,1] is [0,n] where n = 2.
 => since 2 is equal to len(nums)
+=> Other solution: Sum of [0,n] - sum of array

@@ -45,7 +45,6 @@ class Solution:
             i += 1
         return listSum
     
-    class Solution:
     def threeSumYoutubeSolution(self, nums: List[int]) -> List[List[int]]:
         nums.sort()
         listSum = []
