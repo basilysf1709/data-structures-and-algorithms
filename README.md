@@ -66,4 +66,8 @@ and a right pointer
 => if sum > 0 decrease rp by 1
 => else append to list if already not in the list
 => return list
-Q. `LeetCode 15: 3sum`:
+Q. `LeetCode 268. Missing Number`:
+=> sort the array
+=> if i does not equal to num[i], return i
+=> else just return len(nums) => example [0,1] is [0,n] where n = 2.
+=> since 2 is equal to len(nums)
