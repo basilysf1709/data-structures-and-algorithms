@@ -84,3 +84,10 @@ Q. `LeetCode 191. Number of 1 Bits`:
 => 2 % 2 = 0
 => 1 % 2 = 1
 => Reverse the string to get: 1011
+Q. `LeetCode 338. Counting Bits`:
+=> Make an empty list
+=> make an array using range (0, n + 1)
+=> Count the number of 1s using the bin() function
+=> Make sure to understand how bin function works
+=> add the count of 1s to the empty list 
+=> Return the list
