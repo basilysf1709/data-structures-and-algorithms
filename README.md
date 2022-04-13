@@ -72,3 +72,5 @@ Q. `LeetCode 268. Missing Number`:
 => else just return len(nums) => example [0,1] is [0,n] where n = 2.
 => since 2 is equal to len(nums)
 => Other solution: Sum of [0,n] - sum of array
+=> One more solution: Using xor gate. T
+=> 5 xor 5 = 0. Similarly, 5 xor 5 xor 3 = 3

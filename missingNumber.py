@@ -8,3 +8,6 @@ class Solution:
 
     def missingNumberFastest(self, nums: List[int]) -> int:
         return sum(range(0, len(nums) + 1)) - sum(nums)
+    
+    def youtubeSolutionUsingBinary(self, nums: List[int]) -> int:
+        return sum(range(0, len(nums) + 1)) - sum(nums)
