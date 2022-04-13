@@ -77,3 +77,10 @@ Q. `LeetCode 268. Missing Number`:
 Q. `LeetCode 191. Number of 1 Bits`:
 => Use the bin function to convert to a String
 => Use the count function to count the occurrences of '1'
+=> To convert to Binary:
+=> Example: 11 (Keep doing 11/2, 5/2 and so on)
+=> 11 % 2 = 1
+=> 5 % 2 = 1
+=> 2 % 2 = 0
+=> 1 % 2 = 1
+=> Reverse the string to get: 1011
