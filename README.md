@@ -91,3 +91,10 @@ Q. `LeetCode 338. Counting Bits`:
 => Make sure to understand how bin function works
 => add the count of 1s to the empty list 
 => Return the list
+Q. `LeetCode 190. Reverse Bits`:
+=> Convert int to a string using "{:32b}".format(number)
+=> Extra exercise: Do the 32 string thing as an exercise
+=> Go from 0 to n indices
+=> Use the binary formula
+=> Example: 101 = 2^0 x 1 + 2^1 x 0 + 2^2 x 1 = 5
+=> Since the count starts from the rightmost bit. Sum will be the number of the reversed bit
