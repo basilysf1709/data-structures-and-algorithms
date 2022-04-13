@@ -53,7 +53,7 @@ Sol) Algorithm: Two Pointer Technique [Note: if equal, discard either height but
      => discard smaller height => Area = 2 * (pointer2 - pointer1) = 2 * 2 = 4
      => discard smaller height => Area = 6 * (pointer2 - pointer1) = 6 * 1 = 6
      => 49 is the largest area
-Q. `LeetCode 15: 3sum`
+Q. `LeetCode 15: 3sum`:
 Sol) Algorithm: Brute Force => Make three loops and check the sum for each elements 3 times. Continue the loop when indices are equal to one another.
 Algorithm: Pointer technique
 => Go through every element by making a loop
@@ -74,3 +74,6 @@ Q. `LeetCode 268. Missing Number`:
 => Other solution: Sum of [0,n] - sum of array
 => One more solution: Using xor gate. T
 => 5 xor 5 = 0. Similarly, 5 xor 5 xor 3 = 3
+Q. `LeetCode 191. Number of 1 Bits`:
+=> Use the bin function to convert to a String
+=> Use the count function to count the occurrences of '1'
