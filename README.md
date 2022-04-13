@@ -55,3 +55,5 @@ Sol) Algorithm: Two Pointer Technique [Note: if equal, discard either height but
      => 49 is the largest area
 Q. `LeetCode 15: 3sum`
 Sol) Algorithm: Brute Force => Make three loops and check the sum for each elements 3 times. Continue the loop when indices are equal to one another.
+Algorithm: Pointer technique
+=>

@@ -1,5 +1,5 @@
 class Solution:
-    def threeSum(self, nums: List[int]) -> List[List[int]]:
+    def threeSumBruteForce(self, nums: List[int]) -> List[List[int]]:
         nums.sort()
         listSum = []
         i = 0
@@ -21,5 +21,26 @@ class Solution:
                             listSum.append(tmp)
                     k += 1
                 j += 1
+            i += 1
+        return listSum
+    
+    def threeSumMyFirstAttempt(self, nums: List[int]) -> List[List[int]]:
+        nums.sort()
+        listSum = []
+        i = 0
+        while i < len(nums):
+            lp = i + 1
+            rp = len(nums) - 1
+            while lp < rp:
+                tmp = [nums[i], nums[lp], nums[rp]]
+                if sum(tmp) < 0:
+                    lp += 1
+                elif sum(tmp) > 0:
+                    rp -= 1
+                else:
+                    if tmp not in listSum:
+                        listSum.append(tmp)
+                    lp += 1
+                    rp -= 1
             i += 1
         return listSum
