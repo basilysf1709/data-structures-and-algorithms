@@ -100,3 +100,89 @@ and a right pointer
 => Use the binary formula
 => Example: 101 = 2^0 x 1 + 2^1 x 0 + 2^2 x 1 = 5
 => Since the count starts from the rightmost bit. Sum will be the number of the reversed bit
+## LeetCode 322. Coin Change:
+Algorithm: Dynamic Programming, DFS
+Example tracing: [1,2,5], amount = 11
+start with an array:
+least[0] = 12
+least[1] = 12
+least[2] = 12
+least[3] = 12
+least[4] = 12
+least[5] = 12
+least[6] = 12
+least[7] = 12
+least[8] = 12
+least[9] = 12
+least[10] = 12
+least[11] = 12 or 
+=> `least[0 to amount] = amount + 1`
+start with least[0] = 0 as 0 gives 0 back
+loop through 1 to 11 (inclusive)
+and then through coins:
+First iteration: 
+i = 1,
+     => c = 1 and minimum of[ least[1] = 12, 1 + least[i - c = 0] ] gives least[1] = 1 + 0 = 1
+     => c = 2, loop does not enter as i - c = -1
+     => c = 5, loop does not enter as i - c = -4
+     => Result: least[1] = 1
+Second iteration: 
+i = 2,
+     => c = 1 and minimum of[ least[2] = 12, 1 + least[i - c = 1] ] gives least[2] = 1 + 1 = 2
+     => c = 2, and minimum of[ least[2] = 12, 1 + least[i - c = 0] ] gives least[2] = 1 + 0 = 1
+     => c = 5, loop does not enter as i - c = -3
+     => Result: least[2] = 1
+Third iteration: 
+i = 3,
+     => c = 1 and minimum of[ least[3] = 12, 1 + least[i - c = 2] ] gives least[3] = 1 + 1 = 2
+     => c = 2, and minimum of[ least[3] = 12, 1 + least[i - c = 1] ] gives least[3] = 1 + 1 = 2
+     => c = 5, loop does not enter as i - c = -2
+     => => Result: least[3] = 2
+Fourth iteration: 
+i = 4,
+     => c = 1 and minimum of[ least[4] = 12, 1 + least[i - c = 2] ] gives least[4] = 1 + 1 = 2
+     => c = 2, and minimum of[ least[4] = 12, 1 + least[i - c = 1] ] gives least[4] = 1 + 1 = 2
+     => c = 5, loop does not enter as i - c = -2
+     => => Result: least[4] = 2
+Fifth iteration: 
+i = 5,
+     => c = 1 and minimum of[ least[5] = 12, 1 + least[i - c = 2] ] gives least[5] = 1 + 1 = 2
+     => c = 2, and minimum of[ least[5] = 12, 1 + least[i - c = 1] ] gives least[5] = 1 + 1 = 2
+     => c = 5, loop does not enter as i - c = -2
+     => => Result: least[5] = 2
+Sixth iteration: 
+i = 6,
+     => c = 1 and minimum of[ least[6] = 12, 1 + least[i - c = 2] ] gives least[6] = 1 + 1 = 2
+     => c = 2, and minimum of[ least[6] = 12, 1 + least[i - c = 1] ] gives least[6] = 1 + 1 = 2
+     => c = 5, loop does not enter as i - c = -2
+     => => Result: least[6] = 2
+Seventh iteration: 
+i = 7,
+     => c = 1 and minimum of[ least[7] = 12, 1 + least[i - c = 2] ] gives least[7] = 1 + 1 = 2
+     => c = 2, and minimum of[ least[7] = 12, 1 + least[i - c = 1] ] gives least[7] = 1 + 1 = 2
+     => c = 5, loop does not enter as i - c = -2
+     => => Result: least[7] = 2
+Eighth iteration: 
+i = 8,
+     => c = 1 and minimum of[ least[8] = 12, 1 + least[i - c = 2] ] gives least[8] = 1 + 1 = 2
+     => c = 2, and minimum of[ least[8] = 12, 1 + least[i - c = 1] ] gives least[8] = 1 + 1 = 2
+     => c = 5, loop does not enter as i - c = -2
+     => => Result: least[8] = 2
+Ninth iteration: 
+i = 9,
+     => c = 1 and minimum of[ least[9] = 12, 1 + least[i - c = 2] ] gives least[9] = 1 + 1 = 2
+     => c = 2, and minimum of[ least[9] = 12, 1 + least[i - c = 1] ] gives least[9] = 1 + 1 = 2
+     => c = 5, loop does not enter as i - c = -2
+     => => Result: least[9] = 2
+Tenth iteration: 
+i = 10,
+     => c = 1 and minimum of[ least[10] = 12, 1 + least[i - c = 2] ] gives least[10] = 1 + 1 = 2
+     => c = 2, and minimum of[ least[10] = 12, 1 + least[i - c = 1] ] gives least[10] = 1 + 1 = 2
+     => c = 5, loop does not enter as i - c = -2
+     => => Result: least[10] = 2
+Eleventh iteration: 
+i = 11,
+     => c = 1 and minimum of[ least[11] = 12, 1 + least[i - c = 2] ] gives least[11] = 1 + 1 = 2
+     => c = 2, and minimum of[ least[11] = 12, 1 + least[i - c = 1] ] gives least[11] = 1 + 1 = 2
+     => c = 5, loop does not enter as i - c = -2
+     => => Result: least[11] = 2
