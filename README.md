@@ -22,12 +22,12 @@ Sol) Kadane's Algorithm with currMin and currMax
      => currMin = min of(n * currMax, n * currMin, n), (Careful: should be of this iteration, take a tmp at the start for currMax)
      => max = max of(currMax, max)
 ## LeetCode 371: Sum of Two Integers without +/-
-Sol) Algorithm by example:
+Sol) 
+Algorithm by example:
      =>      1011 (11)
      => (xor)1001 (9)
      -----------------
      =>      0010 (new a value)
-
      =>           1011 (11)
      => (and << 1)1001 (9) [note: do and gate and shift 1]
      ---------------------
@@ -35,6 +35,7 @@ Sol) Algorithm by example:
 
      => Do the same operation again: a = a ^ b, b = (a & b) << 1, till b = 0. 
      => Answer: 10100(20) [Note: b-value becomes 0 if we don't have a carry, otherwise it changes]
+     
 ## LeetCode 242: Valid Anagram
 Sol) Algorithm:
      => Convert both to character arrays
