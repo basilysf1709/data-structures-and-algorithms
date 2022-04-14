@@ -32,10 +32,9 @@ Algorithm by example:
      => (and << 1)1001 (9) [note: do and gate and shift 1]
      ---------------------
      =>          10010 (new b value)
-
      => Do the same operation again: a = a ^ b, b = (a & b) << 1, till b = 0. 
      => Answer: 10100(20) [Note: b-value becomes 0 if we don't have a carry, otherwise it changes]
-     
+
 ## LeetCode 242: Valid Anagram
 Sol) Algorithm:
      => Convert both to character arrays
