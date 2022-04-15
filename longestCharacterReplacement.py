@@ -9,4 +9,11 @@ class Solution:
                 setStr[s[l]] -= 1
                 l += 1
             res = max(res, r - l + 1)
+            print(setStr)
+            print(res)
         return res
+
+s = Solution()
+print("ABAABBA")
+print(s.characterReplacement("ABAABBA", 2))
+#Testing the code and visualizing the solution
