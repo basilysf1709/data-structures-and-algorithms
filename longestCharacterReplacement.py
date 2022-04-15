@@ -14,6 +14,6 @@ class Solution:
         return res
 
 s = Solution()
-print("ABAABBA")
-print(s.characterReplacement("ABAABBA", 2))
+print("ABAABAA")
+print(s.characterReplacement("ABAABAA", 2))
 #Testing the code and visualizing the solution

@@ -197,8 +197,8 @@ Flaw: Tracking through least[i] gives different values.
 => Algorithm: Sliding window
 => Note: Revise the algorithm from YouTube
 => Status: STAR
-=> Tracing through an example:
-ABAABBA
+=> Tracing through two examples:
+1. ABAABBA
 {'A': 1}
 1
 {'A': 1, 'B': 1}
@@ -214,5 +214,21 @@ ABAABBA
 {'A': 3, 'B': 2}
 5
 5
+2. ABAABAA
+{'A': 1}
+1
+{'A': 1, 'B': 1}
+2
+{'A': 2, 'B': 1}
+3
+{'A': 3, 'B': 1}
+4
+{'A': 3, 'B': 2}
+5
+{'A': 4, 'B': 2}
+6
+{'A': 5, 'B': 2}
+7
+7
 Time Complexity: O(n)
 Space Complexity: O(Size of the hashmap)
