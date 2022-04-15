@@ -191,3 +191,9 @@ Time Complexity: O(amount * len(coins))
 Space Complexity: O(amount)
 
 Flaw: Tracking through least[i] gives different values.
+
+# LeetCode 424. Longest Repeating Character Replacement
+
+=> Algorithm: Sliding window
+=> Note: Revise the algorithm from YouTube
+=> Status: STAR
