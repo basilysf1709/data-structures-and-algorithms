@@ -140,49 +140,54 @@ i = 3,
      => => Result: least[3] = 2
 Fourth iteration: 
 i = 4,
-     => c = 1 and minimum of[ least[4] = 12, 1 + least[i - c = 2] ] gives least[4] = 1 + 1 = 2
-     => c = 2, and minimum of[ least[4] = 12, 1 + least[i - c = 1] ] gives least[4] = 1 + 1 = 2
-     => c = 5, loop does not enter as i - c = -2
+     => c = 1 and minimum of[ least[4] = 12, 1 + least[i - c = 3] ] gives least[4] = 1 + 2 = 3
+     => c = 2, and minimum of[ least[4] = 12, 1 + least[i - c = 2] ] gives least[4] = 1 + 1 = 2
+     => c = 5, loop does not enter as i - c = -1
      => => Result: least[4] = 2
 Fifth iteration: 
 i = 5,
-     => c = 1 and minimum of[ least[5] = 12, 1 + least[i - c = 2] ] gives least[5] = 1 + 1 = 2
-     => c = 2, and minimum of[ least[5] = 12, 1 + least[i - c = 1] ] gives least[5] = 1 + 1 = 2
-     => c = 5, loop does not enter as i - c = -2
-     => => Result: least[5] = 2
+     => c = 1 and minimum of[ least[5] = 12, 1 + least[i - c = 4] ] gives least[5] = 1 + 2 = 3
+     => c = 2, and minimum of[ least[5] = 12, 1 + least[i - c = 3] ] gives least[5] = 1 + 2 = 3
+     => c = 5, and minimum of[ least[5] = 12, 1 + least[i - c = 0] ] gives least[5] = 1
+     => => Result: least[5] = 1
 Sixth iteration: 
 i = 6,
-     => c = 1 and minimum of[ least[6] = 12, 1 + least[i - c = 2] ] gives least[6] = 1 + 1 = 2
-     => c = 2, and minimum of[ least[6] = 12, 1 + least[i - c = 1] ] gives least[6] = 1 + 1 = 2
-     => c = 5, loop does not enter as i - c = -2
+     => c = 1 and minimum of[ least[6] = 12, 1 + least[i - c = 5] ] gives least[6] = 1 + 1 = 2
+     => c = 2, and minimum of[ least[6] = 12, 1 + least[i - c = 4] ] gives least[6] = 1 + 2 = 3
+     => c = 5, and minimum of[ least[6] = 12, 1 + least[i - c = 1] ] gives least[6] = 1 + 1 = 2
      => => Result: least[6] = 2
 Seventh iteration: 
 i = 7,
-     => c = 1 and minimum of[ least[7] = 12, 1 + least[i - c = 2] ] gives least[7] = 1 + 1 = 2
-     => c = 2, and minimum of[ least[7] = 12, 1 + least[i - c = 1] ] gives least[7] = 1 + 1 = 2
-     => c = 5, loop does not enter as i - c = -2
+     => c = 1 and minimum of[ least[7] = 12, 1 + least[i - c = 6] ] gives least[7] = 1 + 2 = 3
+     => c = 2, and minimum of[ least[7] = 12, 1 + least[i - c = 5] ] gives least[7] = 1 + 1 = 2
+     => c = 5, and minimum of[ least[7] = 12, 1 + least[i - c = 2] ] gives least[7] = 1 + 1 = 2
      => => Result: least[7] = 2
 Eighth iteration: 
 i = 8,
-     => c = 1 and minimum of[ least[8] = 12, 1 + least[i - c = 2] ] gives least[8] = 1 + 1 = 2
-     => c = 2, and minimum of[ least[8] = 12, 1 + least[i - c = 1] ] gives least[8] = 1 + 1 = 2
-     => c = 5, loop does not enter as i - c = -2
-     => => Result: least[8] = 2
+     => c = 1 and minimum of[ least[8] = 12, 1 + least[i - c = 7] ] gives least[8] = 1 + 2 = 3
+     => c = 2, and minimum of[ least[8] = 12, 1 + least[i - c = 6] ] gives least[8] = 1 + 3 = 3
+     => c = 5, and minimum of[ least[7] = 12, 1 + least[i - c = 3] ] gives least[7] = 1 + 1 = 3
+     => => Result: least[8] = 3
 Ninth iteration: 
 i = 9,
-     => c = 1 and minimum of[ least[9] = 12, 1 + least[i - c = 2] ] gives least[9] = 1 + 1 = 2
-     => c = 2, and minimum of[ least[9] = 12, 1 + least[i - c = 1] ] gives least[9] = 1 + 1 = 2
-     => c = 5, loop does not enter as i - c = -2
-     => => Result: least[9] = 2
+     => c = 1 and minimum of[ least[9] = 12, 1 + least[i - c = 8] ] gives least[9] = 1 + 3 = 4
+     => c = 2, and minimum of[ least[9] = 12, 1 + least[i - c = 7] ] gives least[9] = 1 + 2 = 3
+     => c = 5, and minimum of[ least[7] = 12, 1 + least[i - c = 4] ] gives least[7] = 1 + 2 = 3
+     => => Result: least[9] = 3
 Tenth iteration: 
 i = 10,
-     => c = 1 and minimum of[ least[10] = 12, 1 + least[i - c = 2] ] gives least[10] = 1 + 1 = 2
-     => c = 2, and minimum of[ least[10] = 12, 1 + least[i - c = 1] ] gives least[10] = 1 + 1 = 2
-     => c = 5, loop does not enter as i - c = -2
+     => c = 1 and minimum of[ least[10] = 12, 1 + least[i - c = 9] ] gives least[10] = 1 + 3 = 4
+     => c = 2, and minimum of[ least[10] = 12, 1 + least[i - c = 8] ] gives least[10] = 1 + 3 = 4
+     => c = 5, and minimum of[ least[7] = 12, 1 + least[i - c = 5] ] gives least[7] = 1 + 1 = 2
      => => Result: least[10] = 2
 Eleventh iteration: 
 i = 11,
-     => c = 1 and minimum of[ least[11] = 12, 1 + least[i - c = 2] ] gives least[11] = 1 + 1 = 2
-     => c = 2, and minimum of[ least[11] = 12, 1 + least[i - c = 1] ] gives least[11] = 1 + 1 = 2
-     => c = 5, loop does not enter as i - c = -2
-     => => Result: least[11] = 2
+     => c = 1 and minimum of[ least[11] = 12, 1 + least[i - c = 10] ] gives least[11] = 1 + 2 = 3
+     => c = 2, and minimum of[ least[11] = 12, 1 + least[i - c = 9] ] gives least[11] = 1 + 3 = 4
+     => c = 5, and minimum of[ least[7] = 12, 1 + least[i - c = 6] ] gives least[7] = 1 + 2 = 3
+     => => Result: least[11] = 3
+So return 3.
+Time Complexity: O(amount * len(coins))
+Space Complexity: O(amount)
+
+Flaw: Tracking through least[i] gives different values.
