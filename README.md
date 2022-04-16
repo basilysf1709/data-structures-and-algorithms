@@ -265,4 +265,4 @@ and return the list
 => if len(string) == i or both strings not equal, return res
 => else add that character to result
 => return result
-=> Status: Star
+=> Status: Star[Flipped the loop to check everything together at once]
