@@ -256,3 +256,13 @@ and return the list
 # LeetCode 136. Single Number
 => Method 1: Use Count on every element. Return who has one
 => Method 2: Use xor gate as xor gate of the same number results in 0. Whichever element occurs once will be left last (Efficient)
+# LeetCode 14. Longest Common Prefix
+=>Algorithm explanation: 
+=>['flower', 'flow', 'flight']
+=> Result = 'fl'
+=> Iterate through the length of the 0th index 
+=> Iterate through the list of strings
+=> if len(string) == i or both strings not equal, return res
+=> else add that character to result
+=> return result
+=> Status: Star
