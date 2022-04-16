@@ -245,3 +245,7 @@ Example Tracing:
 Final Result: [[1], [1,1], [1,2,1], [1,3,3,1], [1,4,6,4,1]]
 Time Complexity: O(n * S(n))
 Space Complexity: O(n * S(n)) [check]
+# LeetCode 27. Remove Element
+`Bad Question`
+=> Just use remove and calculate the new length 
+and return the list
