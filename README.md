@@ -231,3 +231,15 @@ Flaw: Tracking through least[i] gives different values.
 7
 Time Complexity: O(n)
 Space Complexity: O(Size of the hashmap)
+# LeetCode 118. Pascal's Triangle
+=> Algorithm:
+=> Make sure all the edge cases has 1
+=> Add the index values[i - 1][j - 1] and values[i - 1][j] for the rest
+Example Tracing: 
+=> Input = 5
+=> [1]
+=> [1,1]
+=> [1,2,1]
+=> [1,3,3,1]
+=> [1,4,6,4,1]
+Final Result: [[1], [1,1], [1,2,1], [1,3,3,1], [1,4,6,4,1]]
