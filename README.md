@@ -249,3 +249,7 @@ Space Complexity: O(n * S(n)) [check]
 `Bad Question`
 => Just use remove and calculate the new length 
 and return the list
+# LeetCode 125. Valid Palindrome
+=> replace all punctuation with empty character
+=> convert it to lowercase
+=> reverse string == string => True else False
