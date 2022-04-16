@@ -253,3 +253,6 @@ and return the list
 => replace all punctuation with empty character
 => convert it to lowercase
 => reverse string == string => True else False
+# LeetCode 136. Single Number
+=> Method 1: Use Count on every element. Return who has one
+=> Method 2: Use xor gate as xor gate of the same number results in 0. Whichever element occurs once will be left last (Efficient)
