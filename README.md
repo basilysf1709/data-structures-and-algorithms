@@ -243,3 +243,5 @@ Example Tracing:
 => [1,3,3,1]
 => [1,4,6,4,1]
 Final Result: [[1], [1,1], [1,2,1], [1,3,3,1], [1,4,6,4,1]]
+Time Complexity: O(n * S(n))
+Space Complexity: O(n * S(n)) [check]
