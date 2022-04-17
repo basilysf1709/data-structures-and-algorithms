@@ -266,3 +266,7 @@ and return the list
 => else add that character to result
 => return result
 => Status: Star[Flipped the loop to check everything together at once]
+# LeetCode 389. Find the Difference
+=> loop through every character in t
+=> check if s.count(a) == t.count(a)
+=> if not return a
