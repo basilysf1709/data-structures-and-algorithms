@@ -277,3 +277,14 @@ and return the list
 => else return mid index
 => Time complexity: O(n log n) [Sorting complexity takes importance over loop which is O(sizeof(nums2))]
 => Space Complexity: O(n)
+# LeetCode 206. Reverse Linked List
+=> [1] -> [2] -> [3] -> [None]
+[prev] -> [curr] = loop
+=> [None] <- [1] <- [2] <- [3]
+=> Break Links and store it in a temporary variable
+=> Time Complexity: O(n)
+=> Space Complexity: O(1)
+=> Trace: [None] <- [1]
+=> [1] <- [2]
+=> [2] <- [3]
+=> Final: [3] -> [2] -> [1] -> [None]
