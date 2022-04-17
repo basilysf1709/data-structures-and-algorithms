@@ -16,3 +16,16 @@ class Solution:
             arr.append(itr)
             itr = itr.next
         return False
+    def hasCycleHashSet(self, head: Optional[ListNode]) -> bool:
+        if head == None:
+            return False
+        hashSet = {}
+        count = 0
+        itr = ListNode(head.val, head.next)
+        while itr:
+            if itr in hashSet.values():
+                return True
+            hashSet[count] = itr
+            itr = itr.next
+            count += 1
+        return False
