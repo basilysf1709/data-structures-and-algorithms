@@ -270,3 +270,10 @@ and return the list
 => loop through every character in t
 => check if s.count(a) == t.count(a)
 => if not return a
+# LeetCode 4. Median of Two Sorted Arrays
+=> Append all numbers in one array
+=> Sort the array
+=> return mid th index + (mid + 1)th index/2 if even
+=> else return mid index
+=> Time complexity: O(n log n) [Sorting complexity takes importance over loop which is O(sizeof(nums2))]
+=> Space Complexity: O(n)
