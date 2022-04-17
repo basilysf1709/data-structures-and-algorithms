@@ -324,4 +324,18 @@ Iterate using the loop
 [Check the tracing]
 Time Complexity: O(n)
 Space Complexity: O(n)
-
+# LeetCode 143. Reorder List
+Algorithm: 
+=> Make two new lists
+=> Reverse one list
+=> Edit head such that even gets reversed indices
+ and odd gets normal indices
+=> Example: [1,2,3,4,5]
+=> [1,5,2,4,3]
+Two Lists:
+Odd: [1,2,3]
+Even: [4,5]
+Time Complexity: O(n)
+Space Complexity: O(n^2)
+[Check]
+Find a better solution for this
