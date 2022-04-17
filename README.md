@@ -295,3 +295,33 @@ and return the list
 => else return false
 [Follow up: Can you solve it using O(1) (i.e. constant) memory?] **imp**
 => Floyd's Tortoise and Hare Detection Algorithm check.
+# LeetCode 19. Remove Nth Node From End of List
+=> Algorithm: Dummy first, Two pointer technique
+=> Take left pointer and right pointer linked list objects
+=> Iterate using right pointer
+=> Increment left pointer only when count > n
+=> We have the node before the node to be deleted
+=> do lp.next = lp.next.next
+=> Edge cases: [1] return None and removing first element: return head.next
+=> Trace: 
+[1,2,3,4,5] n = 2
+To be deleted 4
+Attach a dummy:
+[0,1,2,3,4,5]
+Iterate using the loop
+1.   rp = 0
+     lp = does not begin
+2.   rp = 1
+     lp = does not begin
+3.   rp = 2
+     lp = does not begin
+4.   rp = 3
+     lp = 1
+5.   rp = 4
+     lp = 2
+6.   rp = 5
+     lp = 3
+[Check the tracing]
+Time Complexity: O(n)
+Space Complexity: O(n)
+
