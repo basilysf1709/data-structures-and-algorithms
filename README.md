@@ -288,3 +288,8 @@ and return the list
 => [1] <- [2]
 => [2] <- [3]
 => Final: [3] -> [2] -> [1] -> [None]
+# LeetCode 141. Linked List Cycle
+=> return False if head is None
+=> store every linked list object to an array
+=> if object already in the array then return true
+=> else return false
