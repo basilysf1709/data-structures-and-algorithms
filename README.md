@@ -293,3 +293,5 @@ and return the list
 => store every linked list object to an array
 => if object already in the array then return true
 => else return false
+[Follow up: Can you solve it using O(1) (i.e. constant) memory?] **imp**
+=> Floyd's Tortoise and Hare Detection Algorithm check.
