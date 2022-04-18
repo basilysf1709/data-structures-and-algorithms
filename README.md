@@ -351,3 +351,10 @@ Find a better solution for this
 => Example: [[1,1], [2,2], [3,3]] => All index have 1.0 has slopes, two times. Adding 1 gives the number of collinear points
 => Time Complexity: O(n^2)
 => Space Complexity: O(sizeof(hashmap) = sizeof(all possible slopes))
+# LeetCode 204. Count Primes
+Explanation pending
+"Since all primes > 3 are of the form 6n ± 1, once we eliminate that n is:
+not 2 or 3 (which are prime) and
+not even (with n%2) and
+not divisible by 3 (with n%3) then we can test every 6th n ± 1."
+=> Status: Star
