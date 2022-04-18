@@ -339,3 +339,15 @@ Time Complexity: O(n)
 Space Complexity: O(n^2)
 [Check]
 Find a better solution for this
+# LeetCode 149. Max Points on a Line
+=> if length of points = 1 return 1, if length of points = 2 return 2
+=> Use this formula = (y2 - y1) / (x2 - x1) to find if two points are collinear
+=> Loop through all the points twice
+=> Store all the slope of i indices in a hashmap:
+=> Example: 0 -> [1.0,1.0,2.0]
+=> Edge case: Slope might be equal to infinity
+=> Use an arbitrarily big float number. Example: 1 -> [float_max,1.0,-2.5]
+=> Once you have the slope array for all points. Find the max recurring slope and add 1 to it. return the max(added 1)
+=> Example: [[1,1], [2,2], [3,3]] => All index have 1.0 has slopes, two times. Adding 1 gives the number of collinear points
+=> Time Complexity: O(n^2)
+=> Space Complexity: O(sizeof(hashmap) = sizeof(all possible slopes))
