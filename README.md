@@ -358,3 +358,6 @@ not 2 or 3 (which are prime) and
 not even (with n%2) and
 not divisible by 3 (with n%3) then we can test every 6th n ± 1."
 => Status: Star
+# LeetCode 73. Set Matrix Zeroes
+=> Check the index of the x or y of zero in the original loop
+=> if index match, set that element to 0
