@@ -389,3 +389,7 @@ Find a better solution with less space complexity and time complexity.
 => res = [int(n) for n in str(n)]
 => Time complexity: O(time to get 1 * every loop which adds all the numbers or N by context given below) or detect a cycle
 => Space Complexity: [Check], [O(N)] N is the size of array which has individual numbers
+# LeetCode 26. Remove Duplicates from Sorted Array
+=> check the count of every element
+=> if the count is > 1 then
+=> Remove the element until the count of that element becomes 1
