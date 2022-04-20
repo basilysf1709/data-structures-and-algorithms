@@ -359,5 +359,23 @@ not even (with n%2) and
 not divisible by 3 (with n%3) then we can test every 6th n ± 1."
 => Status: Star
 # LeetCode 73. Set Matrix Zeroes
-=> Check the index of the x or y of zero in the original loop
+=> Check the index of the x or y of zero in the original loop and store it in a loop
 => if index match, set that element to 0
+# LeetCode 48. Rotate Image
+Old Index:
+[(0,0),(0,1),(0,2)]
+[(1,0),(1,1),(1,2)]
+[(2,0),(2,1),(2,2)]
+Old Matrix:
+[1,2,3]
+[4,5,6]
+[7,8,9]
+New Index from old:
+[(2,0),(1,0),(0,0)]
+[(2,1),(1,1),(0,1)]
+[(2,2),(1,2),(0,2)]
+New Matrix:
+[7,4,1]
+[8,5,2]
+[9,6,3]
+
