@@ -379,3 +379,13 @@ New Matrix:
 [8,5,2]
 [9,6,3]
 Find a better solution with less space complexity and time complexity.
+# LeetCode 202. Happy Number
+=> if 1 return 1
+=> else run an infinite loop
+=> keep adding all the prev sum in an array
+=> if thisNum in prev, return false [means it is a cycle]
+=> if sum ever equals 1, just return true
+=> Important: Check how to convert integers to lists using python
+=> res = [int(n) for n in str(n)]
+=> Time complexity: O(time to get 1 * every loop which adds all the numbers or N by context given below) or detect a cycle
+=> Space Complexity: [Check], [O(N)] N is the size of array which has individual numbers
