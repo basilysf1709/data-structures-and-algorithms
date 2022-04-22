@@ -400,3 +400,8 @@ Find a better solution with less space complexity and time complexity.
 => convert string and reverse, if negative remove '-' and then multiply by -1
 => return the converted string
 => Check algorithm without converting to strings
+# Swap nodes in pairs:
+=> Watch: https://youtu.be/o811TZLAWOo
+=> Problem: Hard
+=> Time Complexity: O(n)
+=> Space Complexity: O(1)
