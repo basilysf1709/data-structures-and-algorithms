@@ -395,3 +395,8 @@ Find a better solution with less space complexity and time complexity.
 => Remove the element until the count of that element becomes 1
 # LeetCode 867. Transpose Matrix
 => Change the index from [i][j] to [j][i]
+# 7. Reverse Integer
+=> return 0 if it goes out of bounds
+=> convert string and reverse, if negative remove '-' and then multiply by -1
+=> return the converted string
+=> Check algorithm without converting to strings
