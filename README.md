@@ -393,3 +393,5 @@ Find a better solution with less space complexity and time complexity.
 => check the count of every element
 => if the count is > 1 then
 => Remove the element until the count of that element becomes 1
+# LeetCode 867. Transpose Matrix
+=> Change the index from [i][j] to [j][i]
