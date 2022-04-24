@@ -1,5 +1,5 @@
 class Solution:
-    def insert(self, intervals: List[List[int]], newInterval: List[int]) -> List[List[int]]:
+    def insertFirstAttempt(self, intervals: List[List[int]], newInterval: List[int]) -> List[List[int]]:
         if len(intervals) != 0 and newInterval[0] < intervals[0][0] and newInterval[1] < intervals[0][0]:
             intervals.insert(0, newInterval)
             return intervals
