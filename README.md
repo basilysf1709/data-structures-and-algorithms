@@ -405,3 +405,11 @@ Find a better solution with less space complexity and time complexity.
 => Problem: Hard
 => Time Complexity: O(n)
 => Space Complexity: O(1)
+# 57. Insert Interval
+=> 1....4
+=>    3....5
+=> New interval = (1,5)
+=> Condition: newInterval[1] >= interval[0] and newInterval[0] <= interval[1]
+=> Edge cases: Add intervals if they dont overlap or the intervals are empty
+=> Time complexity: O(n log n) My method, O(n) Youtube method
+=> Space complexity: O(n), result array
