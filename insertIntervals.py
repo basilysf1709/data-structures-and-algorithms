@@ -17,3 +17,15 @@ class Solution:
                 nums.append(newInterval)
                 nums.sort(key=lambda x: x[0])
         return nums
+    def insertYoutubeSolution(self, intervals: List[List[int]], newInterval: List[int]) -> List[List[int]]:
+        nums = []
+        for i in range(len(intervals)):
+            if newInterval[1] < intervals[i][0]:
+                nums.append(newInterval)
+                return nums + intervals[i:]
+            elif newInterval[0] > intervals[i][1]:
+                nums.append(intervals[i])
+            else:
+                newInterval = [min(newInterval[0], intervals[i][0]), max(newInterval[1], intervals[i][1])]
+        nums.append(newInterval)
+        return nums
