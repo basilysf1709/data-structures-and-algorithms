@@ -413,3 +413,10 @@ Find a better solution with less space complexity and time complexity.
 => Edge cases: Add intervals if they dont overlap or the intervals are empty
 => Time complexity: O(n log n) My method, O(n) Youtube method
 => Space complexity: O(n), result array
+# LeetCode 56. Merge Intervals
+=> Sort the interval array using intervals.sort(key=lambda x: x[0])
+=> Sort by the x value of the interval
+=> Merge is similar to insert intervals
+=> Keep popping stuff off the array when u get an interval that can be merged.
+=> Time complexity: O(n logn)
+=> Space Complexity: O(1)
