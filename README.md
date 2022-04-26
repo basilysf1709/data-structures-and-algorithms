@@ -1,4 +1,10 @@
-# LeetCode Questions & Algorithms
+# Data Structures & Algorithms
+
+# Arrays = Done
+# Linked Lists (Single & Double) = Done
+# Trees (Binary Trees, Heaps, etc)
+# Hash Maps
+# Graphs
 
 ## LeetCode 238: Product of Array Except Self:
 Sol) Left and Right Products 
