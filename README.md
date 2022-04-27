@@ -440,3 +440,8 @@ Find a better solution with less space complexity and time complexity.
 => Youtube Video: https://youtu.be/BJnMZNwUk1M
 => Time Complexity: O(m * n)
 => Space Complexity: O(1)
+## 79. Word Search
+=> Recursion: https://youtu.be/pfiQ_PS1g8E
+=> Time Complexity: O(n * m * (4 ^ n))
+=> Space Complexity: O() [Confusion]
+=> Status Star
