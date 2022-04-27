@@ -8,12 +8,12 @@
 5. Graphs
 
 # Algorithms
-## Sorting
-## Recursive Algorithms (Dynamic Programming)
+1. Sorting
+2. Recursive Algorithms (Dynamic Programming)
 
 # Other Important things:
-## Time Complexity Concepts
-## Space Complexity Concepts
+1. Time Complexity Concepts
+2. Space Complexity Concepts
 
 ## LeetCode 238: Product of Array Except Self:
 Sol) Left and Right Products 
