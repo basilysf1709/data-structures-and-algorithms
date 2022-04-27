@@ -15,6 +15,14 @@
 1. Time Complexity Concepts
 2. Space Complexity Concepts
 
+# Recursion 
+1. Divide the problem into smaller sub problems
+2. Specify the base condition to stop the recursion
+3. Breakdown:
+Fact():
+if: base case
+else: functionality
+
 ## LeetCode 238: Product of Array Except Self:
 Sol) Left and Right Products 
      Left: [1,2,3,4] => [1,1,2,6]
