@@ -1,3 +1,4 @@
+package LeetCode;
 public class isPalindrome{
     // my attempt
     // public static boolean isPalindrome(int x) {

@@ -1,8 +1,10 @@
+package LeetCode;
 class Solution {
     public int[] twoSum(int[] nums, int target) {
         int sum = 0;
         int a = 0;
         int b = 0;
+        int[] hold;
         for(int i = 0; i <  nums.length; i++){
             for(int j = 0; j < nums.length; j++){
                 sum=nums[i]+nums[j]; // check the sum 
@@ -13,7 +15,7 @@ class Solution {
             }
         }
         
-        int[] hold = {a, b};
+        hold = {a, b};
         return hold;
     }
 }
