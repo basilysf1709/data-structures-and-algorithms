@@ -1,10 +1,19 @@
 # Data Structures & Algorithms
 
-# Arrays = Done
-# Linked Lists (Single & Double) = Done
-# Trees (Binary Trees, Heaps, etc)
-# Hash Maps
-# Graphs
+# Data Structures
+## Arrays = Done
+## Linked Lists (Single & Double) = Done
+## Trees (Binary Trees, Heaps, etc)
+## Hash Maps
+## Graphs
+
+# Algorithms
+## Sorting
+## Recursive Algorithms (Dynamic Programming)
+
+# Other Important things:
+## Time Complexity Concepts
+## Space Complexity Concepts
 
 ## LeetCode 238: Product of Array Except Self:
 Sol) Left and Right Products 
@@ -198,7 +207,7 @@ Space Complexity: O(amount)
 
 Flaw: Tracking through least[i] gives different values.
 
-# LeetCode 424. Longest Repeating Character Replacement
+## LeetCode 424. Longest Repeating Character Replacement
 => Algorithm: Sliding window
 => Note: Revise the algorithm from YouTube
 => Status: STAR
@@ -237,7 +246,7 @@ Flaw: Tracking through least[i] gives different values.
 7
 Time Complexity: O(n)
 Space Complexity: O(Size of the hashmap)
-# LeetCode 118. Pascal's Triangle
+## LeetCode 118. Pascal's Triangle
 => Algorithm:
 => Make sure all the edge cases has 1
 => Add the index values[i - 1][j - 1] and values[i - 1][j] for the rest
@@ -251,18 +260,18 @@ Example Tracing:
 Final Result: [[1], [1,1], [1,2,1], [1,3,3,1], [1,4,6,4,1]]
 Time Complexity: O(n * S(n))
 Space Complexity: O(n * S(n)) [check]
-# LeetCode 27. Remove Element
+## LeetCode 27. Remove Element
 `Bad Question`
 => Just use remove and calculate the new length 
 and return the list
-# LeetCode 125. Valid Palindrome
+## LeetCode 125. Valid Palindrome
 => replace all punctuation with empty character
 => convert it to lowercase
 => reverse string == string => True else False
-# LeetCode 136. Single Number
+## LeetCode 136. Single Number
 => Method 1: Use Count on every element. Return who has one
 => Method 2: Use xor gate as xor gate of the same number results in 0. Whichever element occurs once will be left last (Efficient)
-# LeetCode 14. Longest Common Prefix
+## LeetCode 14. Longest Common Prefix
 =>Algorithm explanation: 
 =>['flower', 'flow', 'flight']
 => Result = 'fl'
@@ -272,18 +281,18 @@ and return the list
 => else add that character to result
 => return result
 => Status: Star[Flipped the loop to check everything together at once]
-# LeetCode 389. Find the Difference
+## LeetCode 389. Find the Difference
 => loop through every character in t
 => check if s.count(a) == t.count(a)
 => if not return a
-# LeetCode 4. Median of Two Sorted Arrays
+## LeetCode 4. Median of Two Sorted Arrays
 => Append all numbers in one array
 => Sort the array
 => return mid th index + (mid + 1)th index/2 if even
 => else return mid index
 => Time complexity: O(n log n) [Sorting complexity takes importance over loop which is O(sizeof(nums2))]
 => Space Complexity: O(n)
-# LeetCode 206. Reverse Linked List
+## LeetCode 206. Reverse Linked List
 => [1] -> [2] -> [3] -> [None]
 [prev] -> [curr] = loop
 => [None] <- [1] <- [2] <- [3]
@@ -294,14 +303,14 @@ and return the list
 => [1] <- [2]
 => [2] <- [3]
 => Final: [3] -> [2] -> [1] -> [None]
-# LeetCode 141. Linked List Cycle
+## LeetCode 141. Linked List Cycle
 => return False if head is None
 => store every linked list object to an array
 => if object already in the array then return true
 => else return false
 [Follow up: Can you solve it using O(1) (i.e. constant) memory?] **imp**
 => Floyd's Tortoise and Hare Detection Algorithm check.
-# LeetCode 19. Remove Nth Node From End of List
+## LeetCode 19. Remove Nth Node From End of List
 => Algorithm: Dummy first, Two pointer technique
 => Take left pointer and right pointer linked list objects
 => Iterate using right pointer
@@ -330,7 +339,7 @@ Iterate using the loop
 [Check the tracing]
 Time Complexity: O(n)
 Space Complexity: O(n)
-# LeetCode 143. Reorder List
+## LeetCode 143. Reorder List
 Algorithm: 
 => Make two new lists
 => Reverse one list
@@ -345,7 +354,7 @@ Time Complexity: O(n)
 Space Complexity: O(n^2)
 [Check]
 Find a better solution for this
-# LeetCode 149. Max Points on a Line
+## LeetCode 149. Max Points on a Line
 => if length of points = 1 return 1, if length of points = 2 return 2
 => Use this formula = (y2 - y1) / (x2 - x1) to find if two points are collinear
 => Loop through all the points twice
@@ -357,17 +366,17 @@ Find a better solution for this
 => Example: [[1,1], [2,2], [3,3]] => All index have 1.0 has slopes, two times. Adding 1 gives the number of collinear points
 => Time Complexity: O(n^2)
 => Space Complexity: O(sizeof(hashmap) = sizeof(all possible slopes))
-# LeetCode 204. Count Primes
+## LeetCode 204. Count Primes
 Explanation pending
 "Since all primes > 3 are of the form 6n ± 1, once we eliminate that n is:
 not 2 or 3 (which are prime) and
 not even (with n%2) and
 not divisible by 3 (with n%3) then we can test every 6th n ± 1."
 => Status: Star
-# LeetCode 73. Set Matrix Zeroes
+## LeetCode 73. Set Matrix Zeroes
 => Check the index of the x or y of zero in the original loop and store it in a loop
 => if index match, set that element to 0
-# LeetCode 48. Rotate Image
+## LeetCode 48. Rotate Image
 Old Index:
 [(0,0),(0,1),(0,2)]
 [(1,0),(1,1),(1,2)]
@@ -385,7 +394,7 @@ New Matrix:
 [8,5,2]
 [9,6,3]
 Find a better solution with less space complexity and time complexity.
-# LeetCode 202. Happy Number
+## LeetCode 202. Happy Number
 => if 1 return 1
 => else run an infinite loop
 => keep adding all the prev sum in an array
@@ -395,23 +404,23 @@ Find a better solution with less space complexity and time complexity.
 => res = [int(n) for n in str(n)]
 => Time complexity: O(time to get 1 * every loop which adds all the numbers or N by context given below) or detect a cycle
 => Space Complexity: [Check], [O(N)] N is the size of array which has individual numbers
-# LeetCode 26. Remove Duplicates from Sorted Array
+## LeetCode 26. Remove Duplicates from Sorted Array
 => check the count of every element
 => if the count is > 1 then
 => Remove the element until the count of that element becomes 1
-# LeetCode 867. Transpose Matrix
+## LeetCode 867. Transpose Matrix
 => Change the index from [i][j] to [j][i]
-# 7. Reverse Integer
+## 7. Reverse Integer
 => return 0 if it goes out of bounds
 => convert string and reverse, if negative remove '-' and then multiply by -1
 => return the converted string
 => Check algorithm without converting to strings
-# Swap nodes in pairs:
+## Swap nodes in pairs:
 => Watch: https://youtu.be/o811TZLAWOo
 => Problem: Hard
 => Time Complexity: O(n)
 => Space Complexity: O(1)
-# 57. Insert Interval
+## 57. Insert Interval
 => 1....4
 =>    3....5
 => New interval = (1,5)
@@ -419,14 +428,14 @@ Find a better solution with less space complexity and time complexity.
 => Edge cases: Add intervals if they dont overlap or the intervals are empty
 => Time complexity: O(n log n) My method, O(n) Youtube method
 => Space complexity: O(n), result array
-# LeetCode 56. Merge Intervals
+## LeetCode 56. Merge Intervals
 => Sort the interval array using intervals.sort(key=lambda x: x[0])
 => Sort by the x value of the interval
 => Merge is similar to insert intervals
 => Keep popping stuff off the array when u get an interval that can be merged.
 => Time complexity: O(n logn)
 => Space Complexity: O(1)
-# 54. Spiral Matrix
+## 54. Spiral Matrix
 => Explanation:
 => Youtube Video: https://youtu.be/BJnMZNwUk1M
 => Time Complexity: O(m * n)
