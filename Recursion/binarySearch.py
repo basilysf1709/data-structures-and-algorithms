@@ -10,3 +10,5 @@ def binarySearch(nums: List[int], left: int, right: int, target: int) -> bool:
 nums = [1,2,4,5,6,7,8]
 
 print(binarySearch(nums,0,len(nums) - 1,90))
+# Time Complexity: O(log(n))
+# Space Complexity: O(1)
