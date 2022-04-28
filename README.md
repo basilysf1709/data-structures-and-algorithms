@@ -6,6 +6,7 @@
 3. Trees (Binary Trees, Heaps, etc)
 4. Hash Maps
 5. Graphs
+6. Stacks/ Queues
 
 # Algorithms
 1. Sorting
@@ -22,10 +23,30 @@
 Fact():
 if: base case
 else: functionality
+=> Elegance and code modularity
+=> Memoization: Important (Can reduce time complexity)
+=> Works well with graphs and trees
+=> Cons: Memory Overhead
+
+=> Important : Call Stack:
+[Task 1]
+[Task 2]
+[Task 3]
+[Task 4]
+to
+[Task 2]
+[Task 3]
+[Task 4]
+=>
+[Task 3]
+[Task 4]
+=>
+[Task 4]
+=> Epty
 
 ## LeetCode 238: Product of Array Except Self:
 Sol) Left and Right Products 
-     Left: [1,2,3,4] => [1,1,2,6]
+     Left: [1,2,3,4] => [1,1,2,6] 
      Right: [1,2,3,4] => [24,12,4,1]
      Output: Left * Right => [24,12,8,6]
      Note: Left Index, loop is 1 to 3(1,2,3) and Right Index, loop is 2 to 0(2,1,0)
