@@ -12,3 +12,4 @@ class Solution:
             return list1
         list2.next = self.merge(list1, list2.next)
         return list2
+# Revise and check Time Complexity and Space Complexity
