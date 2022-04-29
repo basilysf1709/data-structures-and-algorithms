@@ -42,7 +42,13 @@ to
 [Task 4]
 =>
 [Task 4]
-=> Epty
+=> Empty
+## Depth First Search (algorithm example for graphs)
+base: if node == null then false
+if node.val == goal then True
+get all the neighbors and checks if it has been visited or not
+if it has continue else just do dfs recursively on the graph path until found or every possibility has ended
+else return False
 
 ## LeetCode 238: Product of Array Except Self:
 Sol) Left and Right Products 
