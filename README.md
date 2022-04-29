@@ -43,12 +43,16 @@ to
 =>
 [Task 4]
 => Empty
+## Memoization and caching
+An optimization technique used primarily to speed up computer programs by storing the results of expensive function calls and returning the cached result when the same inputs occur again.
 ## Depth First Search (algorithm example for graphs)
-base: if node == null then false
-if node.val == goal then True
-get all the neighbors and checks if it has been visited or not
-if it has continue else just do dfs recursively on the graph path until found or every possibility has ended
-else return False
+Definition: Depth first Search or Depth first traversal is a recursive algorithm for searching all the vertices of a graph or tree data structure. Traversal means visiting all the nodes of a graph.
+Roughly:
+     base: if node == null then false
+     if node.val == goal then True
+     get all the neighbors and checks if it has been visited or not
+     if it has continue else just do dfs recursively on the graph path until found or every possibility has ended
+     else return False
 
 ## LeetCode 238: Product of Array Except Self:
 Sol) Left and Right Products 
