@@ -43,7 +43,7 @@ to
 =>
 [Task 4]
 => Empty
-## Memoization and caching
+## Memoization and Caching
 An optimization technique used primarily to speed up computer programs by storing the results of expensive function calls and returning the cached result when the same inputs occur again.
 ## Depth First Search (algorithm example for graphs)
 Definition: Depth first Search or Depth first traversal is a recursive algorithm for searching all the vertices of a graph or tree data structure. Traversal means visiting all the nodes of a graph.
