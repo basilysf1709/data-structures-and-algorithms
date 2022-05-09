@@ -485,3 +485,5 @@ Find a better solution with less space complexity and time complexity.
 => Time Complexity: O(n * m * (4 ^ n))
 => Space Complexity: O() [Confusion]
 => Status Star
+## 1539. Kth Missing Positive Number
+=> edge case of last number and then doing (k - count) + last element
