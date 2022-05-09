@@ -1,8 +1,8 @@
 # Data Structures & Algorithms
 
 # Data Structures
-1. Arrays = Done
-2. Linked Lists (Single & Double) = Done
+1. Arrays
+2. Linked Lists (Single & Double)
 3. Trees (Binary Trees, Heaps, etc)
 4. Hash Maps
 5. Graphs
