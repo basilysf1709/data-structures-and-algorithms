@@ -487,3 +487,6 @@ Find a better solution with less space complexity and time complexity.
 => Status Star
 ## 1539. Kth Missing Positive Number
 => edge case of last number and then doing (k - count) + last element
+## 41. First Missing Positive
+=> Youtube: https://www.youtube.com/watch?v=8g78yfzMlao&t=748s
+
