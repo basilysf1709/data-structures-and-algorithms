@@ -7,6 +7,13 @@ def binarySearch(nums: List[int], left: int, right: int, target: int) -> bool:
     return binarySearch(nums, mid + 1, right, target)
 
 
+def binarySearchPrac(nums: List[int], left: int, right: int, target: int) -> bool:
+    if left > right: return False
+    mid = (left + right) // 2
+    if mid == target: return True
+    if mid < left: return binarySearch(nums, left, mid - 1, target)
+    return binarySearch(nums, mid + 1, right, target)
+
 nums = [1,2,4,5,6,7,8]
 
 print(binarySearch(nums,0,len(nums) - 1,90))
