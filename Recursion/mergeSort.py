@@ -6,9 +6,7 @@ def mergeSort(nums: List[int]) -> None:
     if len(nums) > 1:
         mergeSort(leftArr)
         mergeSort(rightArr)
-        i = 0
-        j = 0
-        k = 0
+        i, j, k = 0, 0, 0
         while i < len(leftArr) and j < len(rightArr):
             if leftArr[i] < rightArr[j]:
                 nums[k] = leftArr[i]
@@ -31,4 +29,4 @@ mergeSort(nums)
 print(nums)
 
 # Time Complexity: O(n * log(n))
-# Space Complexity: O(n) or O(1) ???
+# Space Complexity: O(n)
