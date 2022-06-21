@@ -12,3 +12,13 @@ class Solution:
             prevNode = currNode
             currNode = nxtNode
         return prevNode
+
+    prevNode = None, currNode = head
+
+    # while currNode:
+    #     nxtNode = currNode.next
+    #     currNode.next = prevNode
+    #     prevNode = currNode
+    #     currNode = nextNode
+    # return prevNode
+    # practice
