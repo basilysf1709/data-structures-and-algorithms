@@ -1,0 +1,12 @@
+Youtube: Abdul Bari explanation
+
+If node is at index "i"
+its left index is at 2 * i
+its right index is at 2 * i + 1
+its parent is at floor(i/2)
+
+Note: [ index is given, not the actual value. 
+Index starting from 1. For theory puproses.]
+
+Maximum number of nodes = 2 ^ (h + 1)
+where h is height
