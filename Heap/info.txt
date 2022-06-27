@@ -1,4 +1,5 @@
 Youtube: Abdul Bari explanation
+Video name: Heap - Heap Sort - Heapify - Priority Queues
 
 If node is at index "i"
 its left index is at 2 * i
@@ -10,3 +11,14 @@ Index starting from 1. For theory puproses.]
 
 Maximum number of nodes = 2 ^ (h + 1)
 where h is height
+
+Height of a "complete" binary tree = log(n)
+
+Complete Binary tree: if you fill an array from left
+to right. there should not be any gaps.
+
+Important: Heap is a complete binary tree
+Max Heap: root is the Max (and a complete binary tree)
+Min heap: root is the Min (and a complete binary tree)
+
+Only root element is deleted
