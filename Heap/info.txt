@@ -21,4 +21,8 @@ Important: Heap is a complete binary tree
 Max Heap: root is the Max (and a complete binary tree)
 Min heap: root is the Min (and a complete binary tree)
 
+
+insert: adjustment upwards (leaf towards root)
+delete: adjustment downwards (root towards leaf)
+Time complexity: O(log(n))
 Only root element is deleted
