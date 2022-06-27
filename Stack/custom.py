@@ -10,6 +10,7 @@ class Stack:
             print("[" + str(self._data[i]) + "]")
         print()
 
+print("Some stack operations: ")
 stack = Stack()
 stack.push([1, 2, 3])
 stack.push([1, 2])
