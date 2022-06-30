@@ -67,9 +67,9 @@ class Heap:
             raise("Heap is full")
         self.storage[self.size] = data
         self.size += 1
-        self.heapifyUp()
+        # self.heapifyUp()
         # Recursive function
-        # self.heapifyUpRecursive(self.size - 1)
+        self.heapifyUpRecursive(self.size - 1)
 
     # iterative
     def heapifyDown(self):
