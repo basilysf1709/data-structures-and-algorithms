@@ -60,16 +60,16 @@ class Heap:
     def heapifyUpRecursive(self, index):
         if (self.hasParent(index) and self.parent(index) > self.storage[index]):
             self.swap(self.getParentIndex(index), index)
-            self.heapifyUpRecursive(self.getParentIndex(index)) # check this
+            self.heapifyUpRecursive(self.getParentIndex(index)) # has to be inside the if statement
     
     def insert(self, data):
         if(self.isFull()):
             raise("Heap is full")
         self.storage[self.size] = data
         self.size += 1
-        # self.heapifyUp()
+        self.heapifyUp()
         # Recursive function
-        self.heapifyUpRecursive(self.size - 1)
+        # self.heapifyUpRecursive(self.size - 1)
 
     # iterative
     def heapifyDown(self):
@@ -92,7 +92,7 @@ class Heap:
             smallest = self.getRightChildIndex(index)
         if(smallest != index):
             self.swap(index, smallest)
-            self.heapifyDownRecursive(smallest) # check this
+            self.heapifyDownRecursive(smallest) # has to be inside the if statement
         
     def removeMin(self):
         if(self.size == 0):
