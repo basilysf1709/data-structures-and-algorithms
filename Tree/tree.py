@@ -4,6 +4,10 @@
 # exactly 1 path b/w root and any node
 # empty tree has no nodes
 
+## Note: Queues and Stacks are implemented using arrays. So every
+## add and remove operation is O(n) [Ignored in our case]
+## Concept remains the same, however.
+
 
 
 class Node:
