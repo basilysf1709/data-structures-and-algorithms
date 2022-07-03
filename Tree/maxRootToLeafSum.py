@@ -17,8 +17,8 @@ class Node:
 # Time Complexity: O(n)
 # Space Complexity: O(n)
 def maxRootToLeafSum(root: Node) -> int:
-    if not root: return -1 * sys.maxsize
-    if not root.left and not root.right: return root.data # check if == None is important here
+    if root is None: return -1 * sys.maxsize
+    if root.left is None and root.right is None: return root.data # check if == None is important here
     return root.data + max(maxRootToLeafSum(root.left), maxRootToLeafSum(root.right))
 
 # root = None
