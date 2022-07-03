@@ -49,14 +49,14 @@ def minTreeDFS(root: Node) -> int:
         if curr.left: stack.append(curr.left)
     return minimum
 
-root = Node(24)
+root = Node(1231241)
 root.left = Node(1002)
 root.left.left = Node(2341)
 root.left.left.left = Node(1231)
-root.left.left.right = Node(100)
-root.left.left.right.left = Node(101)
-root.left.left.right.right = Node(1000)
-root.left.left.right.left.left = Node(11)
+root.left.left.right = Node(123123)
+root.left.left.right.left = Node(1012311)
+root.left.left.right.right = Node(121231000)
+root.left.left.right.left.left = Node(123541)
 
 print("The minimum value is (Recursive DF Min Value): " + str(minTree(root)))
 print("The minimum value is (Iterative BF Min Value): " + str(minTreeBFS(root)))
