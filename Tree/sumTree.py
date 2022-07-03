@@ -14,9 +14,23 @@ class Node:
 
 # Time Complexity: O(n)
 # Space Complexity: O(n)
+# Recursive Depth First 
 def sumTree(root: Node) -> int:
     if not root: return 0
     return root.data + sumTree(root.left) + sumTree(root.right)
+
+# Time Complexity: O(n)
+# Space Complexity: O(n)
+# Iterative Breadth First
+def treeSum(root: Node) -> int:
+    if not root: return 0
+    sum, queue = 0, [root]
+    while len(queue) > 0:
+        curr = queue.pop(0)
+        sum += curr.data
+        if curr.left: queue.append(curr.left)
+        if curr.right: queue.append(curr.right)
+    return sum
 
 # root = None
 root = Node(1)
@@ -33,4 +47,5 @@ root.left.left.right.left.left = Node(8)
 #     sum += i
 # print("The sum is: " + str(sum))
 
-print("The sum is: " + str(sumTree(root)))
+print("The sum is (Recursive Depth First): " + str(sumTree(root)))
+print("The sum is (Iterative Breadth First): " + str(treeSum(root)))
