@@ -13,7 +13,7 @@ class Solution:
             currNode = nxtNode
         return prevNode
 
-    prevNode = None, currNode = head
+    # prevNode = None, currNode = head
 
     # while currNode:
     #     nxtNode = currNode.next
