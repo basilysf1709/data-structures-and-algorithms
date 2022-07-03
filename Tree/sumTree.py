@@ -18,6 +18,7 @@ def sumTree(root: Node) -> int:
     if not root: return 0
     return root.data + sumTree(root.left) + sumTree(root.right)
 
+# root = None
 root = Node(1)
 root.left = Node(2)
 root.left.left = Node(3)
