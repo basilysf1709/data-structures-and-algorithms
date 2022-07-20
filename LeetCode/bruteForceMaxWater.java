@@ -17,7 +17,7 @@ class Solution {
                 breadth++;
             }
         }
-        
+        // adding comments
         return area;
     }
 }
