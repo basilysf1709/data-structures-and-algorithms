@@ -1,5 +1,6 @@
 from typing import List
 
+# check when revising
 # Adjacency List
 def buildGraph(edges: List[List[int]]) -> dict:
     graph = dict()
@@ -14,8 +15,7 @@ def buildGraph(edges: List[List[int]]) -> dict:
 # main function
 def undirectedPath(edges: List[List[int]], nodeA: str, nodeB: str) -> bool:
     graph = buildGraph(edges)
-    visited = set()
-    return hasPath(graph, nodeA, nodeB, visited)
+    return hasPath(graph, nodeA, nodeB, set())
 
 # checking has path
 def hasPath(graph: dict, src: str, dst: str, visited: set) -> bool:
@@ -37,4 +37,4 @@ edges = [
     ['o', 'n']
 ]
 
-print(undirectedPath(edges, 'i', 'm'))
+print(undirectedPath(edges, 'i', 'n'))
