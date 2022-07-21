@@ -3,3 +3,8 @@ Directed and undirected Graph
 Adjacency list (Hash map is perfect)
 Key: node
 Value: negihbours
+
+
+Undirected graphs
+Time complexity: O(edges)
+Space complexity: O(nodes)
