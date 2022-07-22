@@ -12,6 +12,11 @@ def buildGraph(edges: List[List[int]]) -> dict:
         graph[b].append(a)
     return graph
 
+# easier way to create an adjacency list in python
+# graph = { i: [] for i in range(numCourses)}
+#         for src, dst in list:
+#             graph[crs].append(src)
+
 # main function
 def undirectedPath(edges: List[List[int]], nodeA: str, nodeB: str) -> bool:
     graph = buildGraph(edges)
